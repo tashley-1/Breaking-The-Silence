@@ -1,14 +1,13 @@
 function validateForm() {
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-  
-    if (!name || !email || !message) {
-      alert("All fields are required.");
-      return false;
-    }
-  
-    alert("Message submitted successfully. Thank you!");
-    return true;
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !message) {
+    alert("All fields are required.");
+    return false;
   }
-  
+
+  alert("Message submitted successfully. Thank you!");
+  return true;
+}

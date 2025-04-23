@@ -2,20 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Breaking the Silence Exhibit</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Biro Script';
+      src: url('fonts/Biro_Script_reduced.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Breaking the Silence</h1>
-    <p class="subtitle">Men’s Mental Health Matters</p>
+    <h1 style="font-family: 'Biro Script', cursive;">Breaking the Silence</h1>
+    <p class="subtitle" style="font-family: 'Biro Script', cursive;">Men’s Mental Health Matters</p>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#resources">Resources</a></li>
+        <li><a href="#events">Events</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -24,9 +32,8 @@
   <main>
     <section id="about">
       <h2>About the Exhibit</h2>
-      <p>
-        “Breaking the Silence” is an immersive educational exhibit designed to challenge stigma around men's mental health. Through storytelling, interaction, and access to resources, the exhibit invites communities to support healing, reflection, and change.
-      </p>
+      <p>“Breaking the Silence” is an immersive educational exhibit designed to challenge stigma around men's mental health. Through storytelling, interaction, and access to resources, the exhibit invites communities to support healing, reflection, and change.</p>
+      <img src="images/2d38ad7c-1790-446c-90e7-b7234fcfe46b.jpg" alt="Burdened figure" class="art-image" />
     </section>
 
     <section id="experience">
@@ -45,6 +52,7 @@
           <p>Write a pledge or message of hope. Add your voice to a collective statement.</p>
         </div>
       </div>
+      <img src="images/Blue Glitch.jpg" alt="Glitch silhouette" class="art-image" />
     </section>
 
     <section id="resources">
@@ -54,22 +62,26 @@
         <li><a href="https://www.jcmh.org/im-fine-how-to-talk-to-the-men-in-your-life-about-their-mental-health/" target="_blank">Jefferson Center: Talking to Men</a></li>
         <li><a href="https://us.movember.com/" target="_blank">Movember Foundation</a></li>
       </ul>
+      <img src="images/Sitting Down.jpg" alt="Man sitting in chaos" class="art-image" />
+    </section>
+
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <img src="images/Upcoming Events.jpg" alt="Upcoming Events Graphic" class="event-img" />
     </section>
 
     <section id="contact">
       <h2>Contact the Curator</h2>
       <form onsubmit="return validateForm()">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
+        <input type="text" id="name" name="name" required />
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
+        <input type="email" id="email" name="email" required />
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
-
         <button type="submit">Send Message</button>
       </form>
+      <img src="images/Dark Room.jpg" alt="Silhouette in dark room" class="art-image" />
     </section>
   </main>
 
